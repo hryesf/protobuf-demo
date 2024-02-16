@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ir.blujr.protobufdemo.customer;
+
+option java_outer_classname = "CustomerProto";
+
+message Customers {
+  repeated Customer customer = 1;
+}
+
+message Customer {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+}
